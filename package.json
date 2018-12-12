@@ -1,0 +1,40 @@
+{
+  "name": "change-checker-date-plugin",
+  "version": "1.0.0",
+  "description": "'change-checker' plugin for Date.",
+  "keywords": [
+    "change",
+    "checker",
+    "date",
+    "plugin",
+    "type",
+    "typed",
+    "typescript"
+  ],
+  "types": "./types/DatePlugin.d.ts",
+  "main": "./dist/change-checker-date-plugin.js",
+  "unpkg": "./dist/change-checker-date-plugin.js",
+  "scripts": {
+    "clean": "rimraf ./dist/**/* && rimraf ./types/**",
+    "tslint": "tslint -c tslint.json -t verbose --force 'src/**/*.ts'",
+    "tslint-fix": "tslint -c tslint.json -t verbose --force 'src/**/*.ts' --fix",
+    "build": "yarn run clean && webpack --config build/webpack.config.js"
+  },
+  "repository": "https://github.com/HohensteinGroup/ChangeChecker.git",
+  "author": "Maxim Brunnmeier <m.brunnmeier@hohenstein.de>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "change-checker": "~1.0.0",
+    "rimraf": "~2.6.2",
+    "ts-loader": "~5.3.0",
+    "tslint": "~5.11.0",
+    "tslint-loader": "~3.6.0",
+    "typescript": "~3.1.5",
+    "webpack": "~4.23.1",
+    "webpack-cli": "~3.1.2",
+    "webpack-merge": "~4.1.4",
+    "webpack-node-externals": "~1.7.2",
+    "whatwg-fetch": "~3.0.0"
+  }
+}
