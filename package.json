@@ -20,7 +20,7 @@
     "tslint-fix": "tslint -c tslint.json -t verbose --force 'src/**/*.ts' --fix",
     "build": "yarn run clean && webpack --config build/webpack.config.js"
   },
-  "repository": "https://github.com/HohensteinGroup/ChangeChecker.git",
+  "repository": "https://github.com/lawl-dev/ChangeChecker-DatePlugin.git",
   "author": "Maxim Brunnmeier <m.brunnmeier@hohenstein.de>",
   "license": "MIT",
   "private": false,
